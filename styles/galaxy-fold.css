@@ -1,0 +1,98 @@
+.box img {
+    height: 65px;
+}
+
+.SubHeading {
+    font-size: 24px;
+}
+
+.box p {
+    font-size: 1rem;
+}
+
+.box ul li {
+    font-size: 13px;
+    text-align: left;
+}
+
+#navbar ul li a {
+    font-size: 0.7rem;
+    padding: 10px 4px
+}
+
+#logo img {
+    height: 36px;
+    margin-bottom: -10px;
+}
+
+#logo {
+    margin: 10.8px;
+}
+
+#navbar ul {
+    margin-top: -11px;
+}
+
+
+.h-secondary {
+    font-size: 2rem;
+}
+
+.h-primary {
+    font-size: 1.34rem;
+}
+
+#home p {
+    font-size: 11px;
+}
+
+#home p {
+    font-size: 11px;
+}
+
+.btn{
+    font-size: 8px;
+}
+
+.SubHeading {
+    margin: 6px;
+    padding: 4px;
+}
+
+.primary {
+    font-size: 2rem;
+}
+
+#home {
+    height: 250px;
+}
+
+.box{
+    border: 3px solid black;
+}
+
+.partner-associate {
+    padding: 9px;
+}
+
+.contact {
+    font-size: 2rem;
+}
+
+#contact-box input {
+    width: 92%;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+}
+
+#contact-box label {
+    font-size: 1.1rem;
+}
+
+.copyright {
+    font-size: 0.6rem;
+}
+
+#RainX {
+    font-size: 0.7rem;
+}

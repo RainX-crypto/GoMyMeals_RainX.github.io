@@ -1,0 +1,344 @@
+                /* CSS Reset, here * is universal selector and we are resetting the whole page   */ 
+*{ 
+    margin: 0; 
+    padding: 0;
+}
+/* ======================================================================================================================================*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ======================================================================================================================================*/
+
+
+                                         /* CSS VARIABLES DEFINE  */
+:root{
+    --navbar-height: 59px;
+}
+
+/* ===================================================================================================================================== */
+
+                                             /* NAVIGATION  BAR  */
+#navbar{   /* NAVIGATION BAR */   
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+    /* flex-direction: column-reverse;    use it if you want the logo under the menus  */
+}                                        
+
+/* ===================================================================================================================================== */
+                                        /* NAVIGATION BAR: LOGO AND IMAGE */
+#logo{     /* LOGO BLOCK */
+    margin: 40.8px 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo img{  /* LOGO IMAGE */
+    height: 85px;
+    margin: -38px 22px;
+}
+
+/* ===================================================================================================================================== */
+                                                /* NAVIGATION BAR: LIST STYLING */
+
+#navbar ul{    /* UNORDERED LISTS OF NAVBAR SECTION */
+    display: flex;
+}
+
+#navbar ul li{ 
+   list-style: none;                                                /*To remove the bullets infront of list items*/
+   font-size: 1.8rem;
+}
+
+#navbar ul li a{        /* ELEMENTS OF LI */ 
+    color: white;
+    display: block;                                                                /*By default, inline*/
+    padding: 2px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo 2';
+    margin-top: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ===================================================================================================================================== */
+
+                                            /* NAVIGATION BAR: ANIMATIONS/HOVERS */
+#navbar ul li a:hover{       /* ELEMENTS IN LI EFFECTED */ 
+    color: black;
+    transform: scale(1.01);
+    background-color:white;
+    font-weight: bold;
+}
+
+#logo:hover{                /*LOGO AFFECTED AND MAXIMIZED*/
+    transform: scale(2.3);
+}
+    
+/* ===================================================================================================================================== */
+                                                        /* HOME SECTION CSS CONTENT */
+#home{     /* MAIN BLOCK */
+    display: flex;
+    height: 586px;
+    flex-direction: column;
+    padding: 10px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{                      /*Pseudo Selectors to put image and change background easily*/
+    content: "";
+    background: url('../img/burgers.png') no-repeat center center/cover;   /*.. is used to get out of the folder and get the image to    stop the image from being repeating*/
+    position: absolute;
+    z-index: -1;          /*TO STOP OVERFLOW OF THE IMAGE AND BRING HIDDEN CONTENTS UPFRONT*/  
+    height: 710px;
+    width: 100%;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+
+.h-primary{   /* HEADING */
+    color: white;
+    font-size: 3.8rem;   
+    font-family: 'Baloo 2';
+    text-align: center;
+}
+
+#home p{   /* PARAGRAPH */
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif';
+    font-weight: bold;
+}
+
+/* ===================================================================================================================================== */
+                                                /* UTILITY CLASSES FOR HOME SECTION*/
+.btn{   /*BUTTON SUBMIT NOW */
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ===================================================================================================================================== */
+                                            /* UTILITY CLASSES HOME SECTION ANIMATIONS/HOVERS*/
+.btn:hover{     /* BUTTON EFFECTED */ 
+    background: white;
+    color: red;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* ===================================================================================================================================== */
+                                                    /* SERVICES SECTION CSS CONTENT */
+#services-container{
+    background: url(../img/images.png) no-repeat center center/cover;    
+    /* background-color: black; */
+    padding-bottom: 20px;
+}
+
+#services{  /* MAIN BOX IS THE  */
+    margin: 34px;
+    display: flex; 
+    position: relative;
+    /* border: 2px solid red; */
+    margin-bottom: 0;
+}
+
+.h-secondary{  /* HEADING */
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-family: 'Baloo 2';
+}
+
+.SubHeading{         /* SUB-HEADING */
+    color: red;
+    text-align: center;
+    margin: 10px;
+    padding: 1px;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.services-container p{         /* PARAGRAPH */
+    text-align: center ;
+    margin: 2px;
+    padding: 2px;
+}
+
+.box{            /* SUB-BOX MAIN CONTENT, INSIDE services */
+    /* background-color: wheat; */
+    padding: 34px;
+    margin: 2px auto;
+    border-radius: 28px;
+    /* width: auto; */
+    margin-bottom: 20px;
+    border: 4px dotted black;
+} 
+
+.box img{        /* IMAGE */
+    height: 160px;
+    display: block;        /*Mandatory otherwise Auto wont work*/
+    margin: auto;
+}
+
+.box ul li {    /* LIST CONTENTS */
+    color: red;                                                      
+    text-decoration: none;
+    font-family: 'Baloo 2';
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.box p{   /* SLOGANS */
+    font-size: 2.1rem;
+    padding: 4.5px;
+    margin: 14px auto;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    color: blue;
+}
+
+/* ===================================================================================================================================== */
+                                                    /* PARTNERS SECTION CSS CONTENT */
+#partners-section{ /* MAIN BOX*/
+    position: relative;   /* so the logo will take the background space as required */
+    /* border: 5px solid black; */
+}
+
+#partners-section::before{  /*Pseudo Selectors to put image and change background easily*/
+    content: "";
+    background: url(../img/food\ wallpaper.png);
+    position: absolute;
+    z-index: -1;         /*TO STOP OVERFLOW OF THE IMAGE AND BRING HIDDEN CONTENTS UPFRONT*/  
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.primary{          /* HEADING */
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-family: 'Baloo 2';    
+}
+
+#partners{  /*FLEX BOX CONTAINING IMAGE */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners img{
+    height: 260px;
+    border-radius: 100%;
+    border: 8px dotted black;
+    transition: all 1s ease-in-out;
+}
+
+.partner-associate{ /* BOX CONTAINING THE IMAGE */
+    padding: 34px;
+}
+
+/* ===================================================================================================================================== */
+                                                    /* PARTNERS AMIMATION CSS CONTENT  */
+#partners img:hover{
+ transform: rotate3d(123,-254,111,360deg)
+}
+/* ===================================================================================================================================== */
+                                                    /* CONTACT SECTION CSS CONTENT  */
+#contact-section{      /* MAIN BOX */
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+#contact-section::before{      /* Pseudo Selectors to put image and change background easily */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../img/Contact\ Us.png) no-repeat center center/cover;
+}
+
+.contact{   /*HEADING*/
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    font-family: 'Baloo 2'; 
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif';
+    color: black;
+    font-weight: bolder;
+    display: flex;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+/* ===================================================================================================================================== */
+                                                    /* FOOTER CONTENT CSS CONTENT */
+footer{
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: white;
+    background-color: black;
+}
+
+#RainX{
+    color: black;
+    background-color: white;
+    font-size: small;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: large;
+}
+/* ===================================================================================================================================== */
+

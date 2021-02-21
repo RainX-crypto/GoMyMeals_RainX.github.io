@@ -1,0 +1,103 @@
+/* NAVIGATION */
+#navbar{
+    flex-direction: column-reverse;
+}
+#navbar ul li a{
+    font-size: 1.9rem;
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+}
+
+/* HOME */
+#home{
+    height: 293px;   
+    padding: 3px 28px; 
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 13px;
+}
+
+.h-primary{
+    font-size: 26px;
+}
+
+
+.copyright{
+    font-size: 0.7rem;
+}
+
+#RainX{
+    font-size: 0.6rem;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+/* services */
+.box{            /* SUB-BOX MAIN CONTENT, INSIDE services */
+    /* background-color: wheat; */
+    padding: 14px;
+    margin: 2px 0px;
+    border-radius: 28px;
+    width: auto;
+    margin-bottom: 20px;
+    border: 6px solid black;
+}
+
+#services{
+    flex-direction: column;
+}
+
+/* Clients section */
+#partners{
+    flex-wrap: wrap;
+}
+
+#partners img{
+    width: 140px;
+    /* padding:  6px; */
+    height: auto;
+    border:2px solid black;
+}
+
+#logo img{
+    height: 55px;
+    margin: -22px;
+}
+
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+
+#logo {
+    margin: 22.8px 14px;
+}
+
+.SubHeading {
+    margin: 5px;
+    padding: 1px;
+    font-size: 43px;
+}
+
+/* PARTNERS
+#partners{
+    overflow: scroll;
+} */
+
+
+#contact-box input {
+    width: 68%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    margin: 1px;
+}
